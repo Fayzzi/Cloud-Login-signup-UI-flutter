@@ -15,7 +15,7 @@ class _myforgetpasswordState extends State<myforgetpassword> {
       backgroundColor: Colors.grey[400],
       appBar: AppBar(
         backgroundColor: Colors.grey[400],
-        title: const Text("Password Recovery"),
+        title: const Text("Password Recovery",style: TextStyle(color: Colors.white,fontSize: 23)),
         centerTitle: true,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(25),
@@ -29,7 +29,7 @@ class _myforgetpasswordState extends State<myforgetpassword> {
               const SizedBox(
                 height: 12,
               ),
-              const Icon(Icons.rocket_launch, size: 130),
+              const Icon(Icons.email_rounded, size: 130),
               const SizedBox(
                 height: 40,
               ),

@@ -19,8 +19,8 @@ class _myLoginState extends State<myLogin> {
       appBar: AppBar(
         // titleSpacing: 3.0,
         title: const Text(
-          'Data',
-          style: TextStyle(fontSize: 23, color: Colors.white),
+          'Log in',
+            style: TextStyle(color: Colors.white,fontSize: 23),
         ),
         centerTitle: true,
         backgroundColor: Colors.grey[400],
@@ -44,40 +44,11 @@ class _myLoginState extends State<myLogin> {
                   height: 12,
                 ),
                 const Text(
-                  'Hi How Are you',
+                  'Welcome Back',
                   style: TextStyle(fontSize: 23),
                 ),
                 const SizedBox(
                   height: 50,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 30, right: 30),
-                  child: TextField(
-                    cursorColor: Colors.black,
-                    keyboardType: TextInputType.name,
-                    decoration: InputDecoration(
-                      label: const Text(
-                        "Input Name",
-                        style: TextStyle(color: Colors.black),
-                      ),
-                      hintText: 'Enter name',
-                      helperText: "Username or Email",
-                      icon: const Icon(Icons.person, color: Colors.black),
-                      filled: true,
-                      fillColor: Colors.grey,
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(25),
-                        borderSide: const BorderSide(color: Colors.black),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(25),
-                        borderSide: const BorderSide(color: Colors.grey),
-                      ),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 30, right: 30),
@@ -138,7 +109,7 @@ class _myLoginState extends State<myLogin> {
                         ),
                       ),
                       // helperText: "Username or Email",
-                      icon: const Icon(Icons.password, color: Colors.black),
+                      icon: const Icon(Icons.lock, color: Colors.black),
                       filled: true,
                       fillColor: Colors.grey,
                       enabledBorder: OutlineInputBorder(
@@ -178,22 +149,21 @@ class _myLoginState extends State<myLogin> {
                 const SizedBox(
                   height: 20,
                 ),
-                Row(
+                Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     //Text("Login"),
-                    TextButton(
-                        onPressed: () {},
-                        child: TextButton(
+                         TextButton(
                           onPressed: () {},
                           child: const Text(
                             "Login",
                             style: TextStyle(color: Colors.black, fontSize: 17),
                           ),
-                        )),
+                        ),
+                    Text('or',style: TextStyle(color: Colors.black,fontSize: 21),)
                   ],
                 ),
-                Row(
+                Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     TextButton(

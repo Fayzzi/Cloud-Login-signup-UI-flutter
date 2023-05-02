@@ -16,7 +16,7 @@ class _mySignupState extends State<mySignup> {
     return Scaffold(
       backgroundColor: Colors.grey[400],
       appBar: AppBar(
-        title: const Text("Signup"),
+        title: const Text("Signup",style: TextStyle(color: Colors.white,fontSize: 23),),
         centerTitle: true,
         backgroundColor: Colors.grey[400],
         shape: RoundedRectangleBorder(
@@ -32,8 +32,9 @@ class _mySignupState extends State<mySignup> {
                   height: 20,
                 ),
                 const CircleAvatar(
+                  backgroundColor: Colors.grey,
                   backgroundImage:
-                      AssetImage('images/undraw_Fingerprint_login_re_t71l.png'),
+                      AssetImage('images/8741662.png'),
                   radius: 80,
                 ),
                 const SizedBox(
@@ -56,7 +57,7 @@ class _mySignupState extends State<mySignup> {
                     keyboardType: TextInputType.name,
                     decoration: InputDecoration(
                       icon: const Icon(
-                        Icons.person,
+                        Icons.account_circle,
                         color: Colors.black,
                       ),
                       label: const Text(
@@ -92,7 +93,7 @@ class _mySignupState extends State<mySignup> {
                     cursorColor: Colors.black,
                     decoration: InputDecoration(
                       icon: const Icon(
-                        Icons.person,
+                        Icons.account_circle,
                         color: Colors.black,
                       ),
                       label: const Text(
@@ -130,7 +131,7 @@ class _mySignupState extends State<mySignup> {
                         filled: true,
                         fillColor: Colors.grey,
                         icon: const Icon(
-                          Icons.numbers,
+                          Icons.call,
                           color: Colors.black,
                         ),
                         label: const Text(
@@ -202,7 +203,7 @@ class _mySignupState extends State<mySignup> {
                       filled: true,
                       fillColor: Colors.grey,
                       icon: const Icon(
-                        Icons.password,
+                        Icons.lock,
                         color: Colors.black,
                       ),
                       label: const Text(
@@ -252,7 +253,7 @@ class _mySignupState extends State<mySignup> {
                       filled: true,
                       fillColor: Colors.grey,
                       icon: const Icon(
-                        Icons.password,
+                        Icons.lock,
                         color: Colors.black,
                       ),
                       label: const Text(
@@ -260,6 +261,7 @@ class _mySignupState extends State<mySignup> {
                         style: TextStyle(color: Colors.black),
                       ),
                       hintText: "Confirm Password",
+                      helperText: "Both Passwords must be Same",
                       suffixIcon: IconButton(
                         onPressed: () {
                           setState(() {
